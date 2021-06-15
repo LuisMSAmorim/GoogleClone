@@ -1,0 +1,166 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 99.5%;
+}    
+
+body{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100%;
+    margin: 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    color: #2b2b2b;
+    font-size: 12px;
+    margin: 8px 0;
+}
+
+.head{
+    margin: 0 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    align-self: center;
+}
+
+#apps{
+    width: 24px;
+    height: 24px;
+}
+
+#fazer-login{
+    color: #fff;
+    background-color: #1a73e8;
+    border: 1px solid transparent;
+    font-family: Roboto;
+    font-weight: 500;
+    text-align: center;
+    min-width: 96px;
+    width: 120px;
+    height: 36px;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 0;
+    align-items: center;
+}
+
+#search-bar{
+    display: flex;
+    flex-direction: row;
+    width: 582px;
+    height: 44px;
+    border-radius: 30px;
+    margin-top: 30px;
+    border: 1px solid #7d828842;
+    justify-content: space-around;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+
+#logo{
+    width: 272px;
+    height: 92px;
+}
+
+#search{
+    width: 20px;
+    height: 20px;
+}
+
+#search-div{
+    padding: 7px 0 7px 7px;
+}
+
+#keyboard-div{
+    padding: 7px 0;
+}
+
+#mic{
+    width: 18px;
+    height: 20px;
+}
+
+#mic-div{
+    padding: 5px 8px 0 5px;
+}
+
+#buttons-bar{
+    display: flex;
+    flex-direction: row;
+}
+
+#central-input{
+    width: 447px;
+    height: 34px;
+    border: none;
+}
+
+#buttons-bar{
+    margin: 30px 0;
+}
+
+.buttons{
+    height: 36px;
+    width: 135.16px;
+    margin: 0 7px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #3c4043;
+    background-color: #f8f9fa;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 18% 0;
+    color: #70757a;
+    font-size: 14px;
+    background-color: #F2F2F2;
+}
+
+#general-foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#brasil{
+    margin: 0 24px;
+    border-bottom: 1px solid #cccaca6b;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    margin: 0 10px 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+}
+
+.left-foot{
+    margin: 0 15px;
+}
+
+.right-foot{
+    margin: 0 15px;
+}
