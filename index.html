@@ -17,15 +17,15 @@
 <body>
     <header>
         <div class="head">
-            <p class="words">Gmail</p>            
+            <p class="words" onclick="notification()">Gmail</p>            
         </div>
         <div class="head">
-            <p class="words">Imagens</p>
+            <p class="words" onclick="notification()">Imagens</p>
         </div>
-        <div class="head">
+        <div class="head" onclick="notification()">
             <img id="apps" src="images/apps.png" alt="Google apps" aria-label="Google Apps">
         </div>
-        <div class="head">
+        <div class="head" onclick="notification()">
             <button id="fazer-login">Fazer login</button>
         </div>
     </header>
@@ -39,21 +39,21 @@
                 <img id="search" src="images/search.png" alt="Search">
             </div>
             <div class="search">
-                <input id="central-input" type="text">
+                <input onblur="leave()" onfocus="noview()" id="central-input" type="text">
             </div>
-            <div id="keyboard-div" class="search">
+            <div id="keyboard-div" class="search" onclick="notification()">
                 <img id="keyboard" src="images/keyboard.png" alt="Keyboard">
             </div>
-            <div id="mic-div" class="search">
+            <div id="mic-div" class="search" onclick="notification()">
                 <img id="mic" src="images/mic.jpg" alt="mic">
             </div>
         </div>
         <div id="buttons-bar">
             <div class="buttonsdiv">
-                <button class="buttons">Pesquisa Google</button>
+                <button type="button" id="research" autofocus onclick="notification()" class="buttons">Pesquisa Google</button>
             </div>
             <div class="buttonsdiv">
-                <button class="buttons">Estou com sorte</button>
+                <button onclick="notification()" class="buttons">Estou com sorte</button>
             </div>
         </div>
     </main>
@@ -66,27 +66,27 @@
         <div id="general-foot">
             <div class="foot" id="lfoot">
                 <div class="left-foot">
-                    <p class="words">Sobre</p>
+                    <p onclick="notification()" class="words">Sobre</p>
                 </div>
                 <div class="left-foot">
-                    <p class="words">Publicidade</p>
+                    <p onclick="notification()" class="words">Publicidade</p>
                 </div>
                 <div class="left-foot">
-                    <p class="words">Negócios</p>
+                    <p onclick="notification()" class="words">Negócios</p>
                 </div>
                 <div class="left-foot">
-                    <p class="words">Como funciona a Pesquisa</p>
+                    <p onclick="notification()" class="words">Como funciona a Pesquisa</p>
                 </div>
             </div>
             <div class="foot" id="rfoot">
                 <div class="right-foot">
-                    <p class="words">Privacidade</p>
+                    <p onclick="notification()" class="words">Privacidade</p>
                 </div>
                 <div class="right-foot">
-                    <p class="words">Termos</p>
+                    <p onclick="notification()" class="words">Termos</p>
                 </div>
                 <div class="right-foot">
-                    <p class="words">Configurações</p>
+                    <p onclick="notification()" class="words">Configurações</p>
                 </div>
         </div>
         </div>

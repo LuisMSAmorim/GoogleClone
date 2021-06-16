@@ -1,4 +1,13 @@
-const login = document.getElementsByClassName('buttonsdiv')
-const apps = document.getElementById('apps')
-const words = document.getElementsByClassName('words')
-const buttons = document.getElementsByClassName('buttons') //Submit buttons for search only
+const input = document.getElementById('central-input')
+
+function noview() {
+    input.style.outline = '0';
+}
+
+function leave() {
+    input.style.border = 'none';
+}
+
+function notification() {
+    window.alert('This is not the real Google page!!!')
+}

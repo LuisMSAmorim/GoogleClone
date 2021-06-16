@@ -45,7 +45,7 @@ header{
 
 #apps:hover{
     cursor: pointer;
-    background-color: rgba(128, 128, 128, 0.315);
+    background-color: #80808031;
     border-radius: 10px;
 }
 
@@ -108,7 +108,8 @@ main{
 }
 
 #keyboard-div{
-    padding: 7px 0;
+    padding: 7px 0 7px 15px;
+    border-left: 1px solid #80808033;
 }
 
 #mic{
@@ -133,6 +134,9 @@ main{
     width: 447px;
     height: 34px;
     border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    color: #2b2b2b;
 }
 
 #buttons-bar{
@@ -152,6 +156,11 @@ main{
 
 .buttons:hover{
     cursor: pointer;
+    border: 1px solid #c0c0c0b2;
+}
+
+.buttons:focus{
+    outline: none;
 }
 
 footer{
@@ -160,7 +169,7 @@ footer{
     flex-wrap: wrap;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin: 18% 0;
+    margin: 17% 0;
     color: #70757a;
     font-size: 14px;
     background-color: #F2F2F2;
@@ -201,4 +210,90 @@ footer{
 .right-foot:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+
+@media (max-width: 582px) {
+
+    body{
+        max-width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+        color: #2b2b2b;
+        font-size: 12px;
+        margin: 8px 15px 25px;
+    }
+
+    #search-bar{
+        display: flex;
+        flex-direction: row;
+        width: 280px;
+        height: 44px;
+        border-radius: 30px;
+        margin-top: 30px;
+        border: 1px solid #7d828842;
+        justify-content: space-around;
+        box-sizing: border-box;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+    }
+
+    #search{
+        width: 20px;
+        height: 20px;
+    }
+    
+    #search-div{
+        padding: 10px 0 7px 7px;        
+    }
+    
+    #keyboard-div:hover{
+        cursor: pointer;
+    }
+    
+    #keyboard-div{
+        padding: 15px 0 7px 15px;
+        border-left: 1px solid #80808033;
+    }
+    
+    #mic{
+        width: 18px;
+        height: 20px;
+    }
+    
+    #mic-div:hover{
+        cursor: pointer;
+    }
+    
+    #mic-div{
+        padding: 10px 8px 0 5px;
+    }
+    
+    #buttons-bar{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #central-input{
+      width: 150px;
+    }
+    
+    footer{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin: 17% 0;
+        color: #70757a;
+        font-size: 10px;
+        background-color: #F2F2F2;
+        margin: 120px 0;
+    }
 }
